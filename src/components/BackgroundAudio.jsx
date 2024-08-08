@@ -18,7 +18,7 @@ const BackgroundAudio = () => {
 
   return (
     <div className='background-audio'>
-      <audio ref={audioRef} src="src/assets/BambooFlute.mp3" loop muted={isMuted} />
+      <audio ref={audioRef} src="/audio/BambooFlute.mp3" loop muted={isMuted} />
       <button className='mute-button' data-testid="test-mute-button" role='button' type='button' onClick={toggleMute}>
         {isMuted ? <VolumeOffIcon aria-label='VolumeOffIcon'/> : <VolumeMuteIcon aria-label='VolumeMuteIcon'/>}
       </button>

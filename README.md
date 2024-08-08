@@ -4,14 +4,20 @@ This is a dynamic and interactive React-based personality test application inspi
 
 ## Table of Contents
 
-•	Features
-•	Technologies Used
-•	Installation
-•	Usage
-•	Testing
-•	Project Structure
-•	Future Enhancements
-•	Acknowledgments
+•	[Features](#Features)
+•	[Introduction](#Introduction)
+•	[Starting the Personality Test](#Starting the Personality Test)
+•	[The Test](#The Test)
+•	[Results](#Results)
+•	[Technologies Used](#Technologies Used)
+•	[Installation](#Installation)
+•	[Usage](#Usage)
+•	[Testing](#Testing)
+•	[Project Structure](#Project Structure)
+•	[Future Enhancements](#Future Enhancements)
+•	[Reflection](#Reflection)
+
+
 
 
 ### Features
@@ -24,7 +30,7 @@ There are 4 main features in this application:
 •	A calming background track plays during the introduction, with a Mute Button available to toggle sound.
 •	Users can opt to skip the introduction and jump straight to the beginning of the test.
 
-#### Starting the test
+#### Starting the Personality Test
 
 •	A swirling animation symbolising the Yin and Yang concept, enhancing the thematic depth of the application.
 •	Users can start the test at any time by pressing the 'Begin' button. 
@@ -109,6 +115,6 @@ npm run test
 •	Add a toggle for dark mode to allow users to experience the application with inverse colours.
 •	Add a soundtrack selector, allowing users to choose from a number of different background tracks.
 
-### Acknowledgments
+### Reflection
 
-This project is a culmination of my passion for web development, UX design and Eastern Philosophy. It’s my first solo project which I've put a lot of hours into, and I'm excited to finally share it with everyone!
+This project is a culmination of my passion for web development, UX design and Eastern Philosophy. It’s my first solo project, and I wanted to push myself to see what I could make by combining CSS with React in the space of a week. I specifically chose Yin-Yang as the theme because it means a lot to me, and its part of a philosophy which I try to follow in my daily life. I'm excited to share it with everyone, and I look forward to making further developments to this project!

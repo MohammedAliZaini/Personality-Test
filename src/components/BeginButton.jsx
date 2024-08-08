@@ -1,5 +1,5 @@
 import React from 'react';
-import "../components/styles/BeginButton.css"
+import "../components/styles/BeginButton.css";
 
 const BeginButton = ({ onClick }) => {
   return (

@@ -34,7 +34,6 @@ describe('Home Component', () => {
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
-    fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
@@ -56,7 +55,6 @@ describe('Home Component', () => {
     fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
-    fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     expect(screen.getByText("It does not matter how slowly you go as long as you do not stop.\" - Confucius")).toBeInTheDocument();
   })
 
@@ -69,7 +67,6 @@ describe('Home Component', () => {
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
-    fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
@@ -77,6 +74,24 @@ describe('Home Component', () => {
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     expect(screen.getByText("Water is fluid, soft, and yielding. But water will wear away rock, which is rigid and cannot yield. As a rule, whatever is fluid, soft, and yielding will overcome whatever is rigid and hard. This is another paradox: what is soft is strong.\" ― Lao Tzu")).toBeInTheDocument();
   })
+
+  it('Should show the Balanced quote when the same amount of Yin/Yang answers have been given', () => {
+    render(<Home/>);
+    fireEvent.click(screen.getByRole('button', { name: /Skip Intro/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Begin/i }));
+    fireEvent.click(screen.getByRole('button', {name: /No/}));
+    fireEvent.click(screen.getByRole('button', {name: /Yes/}));
+    fireEvent.click(screen.getByRole('button', {name: /Yes/}));
+    fireEvent.click(screen.getByRole('button', {name: /No/}));
+    fireEvent.click(screen.getByRole('button', {name: /No/}));
+    fireEvent.click(screen.getByRole('button', {name: /No/}));
+    fireEvent.click(screen.getByRole('button', {name: /Yes/}));
+    fireEvent.click(screen.getByRole('button', {name: /Yes/}));
+    fireEvent.click(screen.getByRole('button', {name: /No/}));
+    fireEvent.click(screen.getByRole('button', {name: /Yes/}));
+    expect(screen.getByText("The middle way is the path to enlightenment.\" - Buddha")).toBeInTheDocument();
+  })
+
 
   it('Should render retake test button after quiz ends', () => {
     render(<Home />);
@@ -86,7 +101,6 @@ describe('Home Component', () => {
     fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
-    fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));
     fireEvent.click(screen.getByRole('button', {name: /Yes/}));
     fireEvent.click(screen.getByRole('button', {name: /No/}));

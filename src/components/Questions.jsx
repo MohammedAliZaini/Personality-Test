@@ -9,12 +9,6 @@ const questions = [
   },
   {
     index: 2,
-    question: 'Do you enjoy introspection?',
-    yesType: 'yin',
-    noType: 'yang'
-  },
-  {
-    index: 2,
     question: 'Do you have a role model?',
     yesType: 'yang',
     noType: 'yin'
@@ -34,8 +28,8 @@ const questions = [
   {
     index: 5,
     question: 'Do you prefer being in control?',
-    yesType: 'yin',
-    noType: 'yang'
+    yesType: 'yang',
+    noType: 'yin'
   },
   {
     index: 6,
@@ -45,13 +39,13 @@ const questions = [
   },
   {
     index: 7,
-    question: 'Logic over intuition',
+    question: 'Logic over intuition.',
     yesType: 'yang',
     noType: 'yin'
   },
   {
     index: 8,
-    question: 'Are you often introspective?',
+    question: 'Family comes first.',
     yesType: 'yang',
     noType: 'yin'
   },
@@ -63,7 +57,7 @@ const questions = [
   },
   {
     index: 10,
-    question: 'If I could choose to be an animal, I\'d be a bird.',
+    question: 'Knowledge of self over knowledge of other.',
     yesType: 'yin',
     noType: 'yang'
   }

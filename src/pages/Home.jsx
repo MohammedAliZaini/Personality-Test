@@ -7,6 +7,8 @@ import YangAnimation from '../components/YangAnimation';
 import YinAnimation from '../components/YinAnimation';
 import YinQuote from '../components/YinQuote';
 import YangQuote from '../components/YangQuote';
+import BalancedAnimation from '../components/BalancedAnimation';
+import BalancedQuote from '../components/BalancedQuote';
 import Introduction from '../components/Introduction';
 import BackgroundAudio from '../components/BackgroundAudio';
 import './Home.css';
@@ -57,8 +59,8 @@ const Home = () => {
         !isAnimationStarted ? (
           <>
             <div className='wrapper'>
-            <Introduction onFinish={() => setIsAnimationStarted(true)} />
-            <BackgroundAudio play={!isAnimationStarted} />
+              <Introduction onFinish={() => setIsAnimationStarted(true)} />
+              <BackgroundAudio play={!isAnimationStarted} />
             </div>
             <button className='skip-button' data-testid="skip-button" role='button' type='button' onClick={handleSkip}>
               <span className='left-text'>Skip</span>
@@ -83,9 +85,23 @@ const Home = () => {
           </div>
         ) : (
           <div className="popout-card">
-            <div>{yinPercentage > yangPercentage ? <YinAnimation /> : <YangAnimation />}</div>
+            {yinPercentage === yangPercentage ? (
+              <>
+                <BalancedAnimation />
+                <BalancedQuote />
+              </>
+            ) : yinPercentage > yangPercentage ? (
+              <>
+                <YinAnimation />
+                <YinQuote />
+              </>
+            ) : (
+              <>
+                <YangAnimation />
+                <YangQuote />
+              </>
+            )}
             <p>You scored: {yinPercentage}% Yin, {yangPercentage}% Yang</p>
-            <p>{yinPercentage > yangPercentage ? <YinQuote /> : <YangQuote />}</p>
             <button className='retake-test' role='button' type='button' onClick={handleBegin}>
               <span className='retake-left-text'>Retake</span>
               <span className='retake-right-text'>Test</span>

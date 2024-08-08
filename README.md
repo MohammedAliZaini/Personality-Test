@@ -4,18 +4,18 @@ This is a dynamic and interactive React-based personality test application inspi
 
 ## Table of Contents
 
-•	[Features](#Features)
-•	[Introduction](#Introduction)
-•	[Starting the Personality Test](#Starting the Personality Test)
-•	[The Test](#The Test)
-•	[Results](#Results)
-•	[Technologies Used](#Technologies Used)
-•	[Installation](#Installation)
-•	[Usage](#Usage)
-•	[Testing](#Testing)
-•	[Project Structure](#Project Structure)
-•	[Future Enhancements](#Future Enhancements)
-•	[Reflection](#Reflection)
+•	[Features](#features)
+•	[Introduction](#introduction)
+•	[Starting the Personality Test](#starting-the-personality-test)
+•	[The Test](#the-test)
+•	[Results](#results)
+•	[Technologies Used](#technologies-used)
+•	[Installation](#installation)
+•	[Usage](#usage)
+•	[Testing](#testing)
+•	[Project Structure](#project-structure)
+•	[Future Enhancements](#future-enhancements)
+•	[Reflection](#reflection)
 
 
 

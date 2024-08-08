@@ -1,0 +1,31 @@
+button.no-button {
+  background-color: white;
+  color: black;
+  border: black solid 1px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(224, 224, 233, 0.6); 
+  padding: 1rem 1rem;
+  transition: all 0.3s;
+  border-bottom: 4px solid black;
+  font-family: Times;
+}
+
+button.no-button:hover {
+  background-color: black;
+  color: white;
+  border: white solid 1px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0px 15px 25px -5px rgba(224, 224, 233, 0.6);
+  transform: scale(1.03);
+  font-family: Times;
+}
+
+button.no-button:active {
+  box-shadow: 0px 4px 8px rgba(224, 224, 223, 0.6);
+  transform: scale(0.98);
+  font-family: Times;
+}

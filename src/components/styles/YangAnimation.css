@@ -1,0 +1,9 @@
+.yang-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 0;
+  height: 300px;
+  width: 300px;
+  margin-left: 50px;
+}

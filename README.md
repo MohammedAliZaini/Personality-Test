@@ -29,8 +29,6 @@ This is a dynamic and interactive React-based personality test application inspi
 •	[Reflection](#reflection)
 
 
-
-
 ### Features
 
 There are 4 main features in this application:
@@ -148,3 +146,5 @@ npm run test
 ### Reflection
 
 This project is a culmination of my passion for web development, UX design and Eastern Philosophy. It’s my first solo project, and I wanted to push myself to see what I could make by combining CSS with React in the space of a week. I specifically chose Yin-Yang as the theme because it means a lot to me, and its part of a philosophy which I try to follow in my daily life. I'm excited to share it with everyone, and I look forward to making further developments to this project!
+
+#### This application can be viewed at: https://stellar-cassata-6cfebf.netlify.app

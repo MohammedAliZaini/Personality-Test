@@ -175,8 +175,8 @@
   box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 100%) {
   .retake-test {
-    height: 40px;
+    height: auto;
   }
 }

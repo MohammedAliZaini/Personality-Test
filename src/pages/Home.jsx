@@ -101,11 +101,16 @@ const Home = () => {
                 <YangQuote />
               </>
             )}
-            <p>You scored: {yinPercentage}% Yin, {yangPercentage}% Yang</p>
+            <p>
+              Yin represents freedom, and Yang represents organisation.
+              <br/>
+              You scored: {yinPercentage}% Yin, {yangPercentage}% Yang
+            </p>
             <button className='retake-test' role='button' type='button' onClick={handleBegin}>
               <span className='retake-left-text'>Retake</span>
               <span className='retake-right-text'>Test</span>
             </button>
+            <div className='score_padding'/>
           </div>
         )
       )}

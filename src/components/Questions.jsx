@@ -51,7 +51,7 @@ const questions = [
   },
   {
     index: 9,
-    question: 'Adaptability over organisation.',
+    question: 'I would rather be more adaptable than organised.',
     yesType: 'yin',
     noType: 'yang'
   },

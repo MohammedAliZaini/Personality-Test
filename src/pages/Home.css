@@ -2,6 +2,11 @@
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  margin-left: 2rem;
+}
+
+.background-audio{
+  margin-left: 10rem;
 }
 
 @keyframes fadeInAnimation {
@@ -17,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 60px;
+  margin-left: 8rem;
 }
 
 .container {
@@ -35,7 +40,7 @@
   height: 580px;
   margin: 0 auto;
   text-align: center;
-  margin-left: 20rem;
+  margin-left: 12rem;
   font-family: Times;
 }
 

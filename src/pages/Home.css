@@ -1,3 +1,5 @@
+
+
 .home {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
@@ -184,4 +186,8 @@
   .retake-test {
     height: auto;
   }
+}
+
+.score_padding {
+  margin-left: 200rem;
 }

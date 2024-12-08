@@ -12,6 +12,7 @@ import BalancedQuote from '../components/BalancedQuote';
 import Introduction from '../components/Introduction';
 import BackgroundAudio from '../components/BackgroundAudio';
 import './Home.css';
+import {InlineShareButtons} from 'sharethis-reactjs';
 
 const Home = () => {
   const [isAnimationStarted, setIsAnimationStarted] = useState(false);
@@ -85,6 +86,27 @@ const Home = () => {
           </div>
         ) : (
           <div className="popout-card">
+                          <InlineShareButtons
+          config={{
+            alignment: 'center',  // alignment of buttons (left, center, right)
+            color: 'social',      // set the color of buttons (social, white)
+            enabled: true,        // show/hide buttons (true, false)
+            font_size: 16,        // font size for the buttons
+            labels: 'cta',        // button labels (cta, counts, null)
+            language: 'en',       // which language to use (see LANGUAGES)
+            networks: [           // which networks to include (see SHARING NETWORKS)
+              'whatsapp',
+              'linkedin',
+              'messenger',
+              'facebook',
+              'twitter'
+            ],
+            padding: 12,          // padding within buttons (INTEGER)
+            radius: 4,            // the corner radius on each button (INTEGER)
+            show_total: true,
+            size: 40,             // the size of each button (INTEGER)
+          }}
+            />
             {yinPercentage === yangPercentage ? (
               <>
                 <BalancedAnimation />
@@ -110,6 +132,7 @@ const Home = () => {
               <span className='retake-left-text'>Retake</span>
               <span className='retake-right-text'>Test</span>
             </button>
+            <br/>
             <div className='score_padding'/>
           </div>
         )
